@@ -9,5 +9,7 @@
 
 # Capturas:
 
-    - ![Session 1](/capturas/tarea1.png)
+- Sesión 1:
+
+    ![Sesion 1](/capturas/tarea1.png)
   
