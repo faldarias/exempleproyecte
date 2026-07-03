@@ -5,5 +5,5 @@
 * Web : https://faldarias.github.io/exempleproyecte/
 * Repositorio: https://github.com/faldarias/exempleproyecte
 * Capturas:
-* ![Sesion1](/capturas/sesion1.png)
+- ![Sesion1](/capturas/sesion1.png)
   
