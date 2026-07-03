@@ -1,0 +1,6 @@
+Tarea 1:
+- Definición del proyecto.
+- Crear index.html con título y elementos básicos.
+- Nivel avanzado: incluir URL de GitHub.
+
+Este texto corresponde a lo solicitado en el chat para obtener la tarea 1.
