@@ -111,9 +111,9 @@ body.language-page {
     width: 100%;
     max-width: 800px;
     height: auto;
-    margin: 0 auto 30px;
+    margin: 0 auto 0px;
     display: block;
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 .language-selector h1 {
