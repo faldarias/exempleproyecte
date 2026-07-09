@@ -1,7 +1,20 @@
-Crea en la web del fichero index un menu que permita escoger entre 
-programacion o guia del alumno, test. 
-Tambien debe de poderse eleguir el idioma catellan o y valencia. 
-Crea un fichero guia.html con un resumen de lo mas importante de 
-la programacion. 
-El text debe ser 5 preguntas sobre la guia del alumno. 
-Añade este texto a la carpeta prompt fihero propmp3.
+1. Menú index.html: escollir entre
+   programació, guia alumne o test.
+   Idioma: castellà o valencià.
+
+2. Crear guia.html amb resum de
+   programació i 5 preguntes.
+
+3. Crear carpeta js/ i posar-hi
+   scripts.js. Rutes relatives en
+   els HTML.
+
+4. Test de 5 preguntes (3 opcions,
+   1 correcta). Aprovar = 3/5.
+   Mostra nota i aprovat/suspès.
+   Bilingüe (va/es).
+   Estils: css/tests.css.
+   Lògica: js/test.js.
+
+5. Moure estilo.css a css/ i
+   actualitzar rutes en HTML.

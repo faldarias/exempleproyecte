@@ -1,80 +1,17 @@
-
-- Crear un selector de idioma en index.html con opciones: Castellano y Valenciano.
-- Crear fichero programacion.html que muestre el contenido en el idioma seleccionado.
-- Implementar cambio dinámico de idioma mediante parámetros URL.
-- Contenidos disponibles:
-  * Introducción
-  * Competencias
-  * Resultados de aprendizaje
-  * Criterios de evaluación
-  * Contenidos
-  * Unidades didácticas
-  * Metodología
-  * Actividades complementarias
-- Ambos idiomas (castellano y valenciano) completamente traducidos y funcionales.
-- Nivel avanzado: uso de JavaScript para gestionar dinámicamente el cambio de idioma.
-- Cambiar la tipografía de todas las webs a sans-serif (-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif).
-- Añadir imagen SVG de ciclos de informática al fichero index.html (ciclos-informatica.svg).
-- Cambiar el color de fondo a violeta suave (#f3e8ff).
-- Extraer todos los estilos CSS inline de los archivos HTML al fichero estilo.css.
-- Consolidar estilos para todas las páginas en un único archivo CSS.
-- Utilizar rutas relativas para las imágenes y recursos para portabilidad en internet.
-- Eliminar etiquetas <style> de los archivos HTML.
-- Crear un título principal en index.html: "SRI Servicios de Red e Internet"
-- Implementar un sistema de dos pasos en la página principal:
-  * Paso 1: Seleccionar idioma (Castellano o Valenciano)
-  * Paso 2: Elegir entre dos opciones:
-    - Programación (acceso a programacion.html)
-    - Guía del Alumno (acceso a guia.html)
-- Utilizar JavaScript para gestionar la navegación entre pasos
-- Implementar botón "Atrás" para volver al paso anterior
-- Utilizar transiciones suaves entre pasos
-- Mantener la imagen de ciclos de informática en la interfaz principal
-- Botones con iconos y colores diferenciados:
-  * Botones de idioma: Castellano (rojo) y Valenciano (azul)
-  * Botones de contenido: Programación (azul) y Guía del Alumno (verde)
-- Responsive design para dispositivos móviles
-- Nivel avanzado: navegación dinámica basada en idioma seleccionado
-- Preparar para integración con página guia.html que mostrará la guía del alumno
-- Crear carpeta "scripts" en la raíz del proyecto
-- Crear archivo "scripts/scripts.js" que centralice todo el código JavaScript
-- Extraer scripts inline de:
-  * index.html: funciones de navegación (selectLanguage, backToLanguage, goTo)
-  * programacion.html: datos de contenido y funciones de renderizado (contenidoCastellano, contenidoValenciano, getLanguage, renderContent)
-- Consolidar todo el código JavaScript en un único archivo para mejor mantenibilidad
-- Actualizar referencias en los archivos HTML:
-  * Eliminar bloques <script> inline
-  * Añadir <script src="scripts/scripts.js"></script> antes del cierre de </body>
-- Utilizar DOMContentLoaded para asegurar que el DOM esté listo antes de ejecutar scripts
-- Agregar validaciones para evitar errores si elementos no existen en la página
-- Mejorar portabilidad del código a través de rutas relativas
-- Facilitar debugging y mantenimiento futuro del código
-- Crear un título principal en index.html: "SRI Servicios de Red e Internet"
-- Implementar un sistema de dos pasos en la página principal:
-  * Paso 1: Seleccionar idioma (Castellano o Valenciano)
-  * Paso 2: Elegir entre dos opciones:
-    - Programación (acceso a programacion.html)
-    - Guía del Alumno (acceso a guia.html)
-- Utilizar JavaScript para gestionar la navegación entre pasos
-- Implementar botón "Atrás" para volver al paso anterior
-- Utilizar transiciones suaves entre pasos
-- Mantener la imagen de ciclos de informática en la interfaz principal
-- Botones con iconos y colores diferenciados:
-  * Botones de idioma: Castellano (rojo) y Valenciano (azul)
-  * Botones de contenido: Programación (azul) y Guía del Alumno (verde)
-- Responsive design para dispositivos móviles
-- Nivel avanzado: navegación dinámica basada en idioma seleccionado
-- Preparar para integración con página guia.html que mostrará la guía del alumno
-- Crear carpeta "scripts" en la raíz del proyecto
-- Crear archivo "scripts/scripts.js" que centralice todo el código JavaScript
-- Extraer scripts inline de:
-  * index.html: funciones de navegación (selectLanguage, backToLanguage, goTo)
-  * programacion.html: datos de contenido y funciones de renderizado (contenidoCastellano, contenidoValenciano, getLanguage, renderContent)
-- Consolidar todo el código JavaScript en un único archivo para mejor mantenibilidad
-- Actualizar referencias en los archivos HTML:
-  * Eliminar bloques <script> inline
-  * Añadir <script src="scripts/scripts.js"></script> antes del cierre de </body>
-- Utilizar DOMContentLoaded para asegurar que el DOM esté listo antes de ejecutar scripts
-- Agregar validaciones para evitar errores si elementos no existen en la página
-- Mejorar portabilidad del código a través de rutas relativas
-- Facilitar debugging y mantenimiento futuro del código
+- Index.html: selector d'idioma (Castellà/Valencià)
+  i menú de dos passos (idioma → contingut).
+- Programacion.html: contingut bilingüe amb
+  canvi dinàmic per URL (?lang=es|va).
+- Seccions: Introducció, Competències, Resultats,
+  Criteris, Continguts, Unitats, Metodologia,
+  Activitats.
+- Estil: fons violeta (#f3e8ff), lletra sans-serif.
+- CSS: tot a estilo.css (sense <style> inline).
+- JS: tot a scripts/scripts.js (sense <script> inline).
+- Imatge SVG de ciclos a index.html.
+- Rutes relatives per a publicació web.
+- Botons: Castellà (roig), Valencià (blau),
+  Programació (blau), Guia (verd).
+- Botó "Atrás" per tornar al pas anterior.
+- Disseny responsive.
+- Preparat per a guia.html.

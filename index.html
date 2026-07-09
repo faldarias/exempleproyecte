@@ -7,35 +7,22 @@
     <meta name="description" content="SRI - Servicios de Red e Internet - Ciclo Formativo ASIR">
     <meta name="author" content="Paco Aldarias">
     <title>SRI - Servicios de Red e Internet</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body class="language-page">
     <div class="language-selector">
-        <img src="imagenes/familia.png" alt="Ciclos Formativos de Informática" class="ciclos-image">
+        <img src="img/familia.png" alt="Ciclos Formativos de Informática" class="ciclos-image">
         <h1>SRI</h1>
         <p class="main-subtitle">Servicios de Red e Internet</p>
 
-        <!-- Paso 1: Seleccionar Idioma -->
-        <div id="step-language" class="selection-step">
-            <p class="step-title">Selecciona tu idioma / Selecciona el teu idioma</p>
-            <div class="language-buttons">
-                <a href="javascript:selectLanguage('es')" class="btn-castellano">Castellano</a>
-                <a href="javascript:selectLanguage('va')" class="btn-valenciano">Valenciano</a>
-            </div>
-        </div>
-
-        <!-- Paso 2: Seleccionar Contenido -->
-        <div id="step-content" class="selection-step" style="display: none;">
-            <p class="step-title" id="content-title">Selecciona qué deseas ver / Selecciona què vols veure</p>
+        <div class="selection-step">
+            <p class="step-title">Selecciona qué deseas ver / Selecciona què vols veure</p>
             <div class="content-buttons">
                 <a href="javascript:goTo('programacion')" class="btn-programacion">📚 Programación</a>
                 <a href="javascript:goTo('guia')" class="btn-guia">📖 Guía del Alumno</a>
                 <a href="javascript:goTo('test')" class="btn-test">✏️ Test</a>
             </div>
-            <p class="step-back">
-                <a href="javascript:backToLanguage()" class="btn-back">← Atrás</a>
-            </p>
         </div>
 
         <footer>
@@ -43,7 +30,7 @@
         </footer>
     </div>
 
-    <script src="scripts/scripts.js"></script>
+    <script src="js/scrits1.js"></script>
 </body>
 
 </html>
