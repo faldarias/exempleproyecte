@@ -16,3 +16,19 @@ Tarea 3: Menú Principal Interactivo
 - Responsive design para dispositivos móviles
 - Nivel avanzado: navegación dinámica basada en idioma seleccionado
 - Preparar para integración con página guia.html que mostrará la guía del alumno
+
+Tarea 4: Organización de JavaScript
+
+- Crear carpeta "scripts" en la raíz del proyecto
+- Crear archivo "scripts/scripts.js" que centralice todo el código JavaScript
+- Extraer scripts inline de:
+  * index.html: funciones de navegación (selectLanguage, backToLanguage, goTo)
+  * programacion.html: datos de contenido y funciones de renderizado (contenidoCastellano, contenidoValenciano, getLanguage, renderContent)
+- Consolidar todo el código JavaScript en un único archivo para mejor mantenibilidad
+- Actualizar referencias en los archivos HTML:
+  * Eliminar bloques <script> inline
+  * Añadir <script src="scripts/scripts.js"></script> antes del cierre de </body>
+- Utilizar DOMContentLoaded para asegurar que el DOM esté listo antes de ejecutar scripts
+- Agregar validaciones para evitar errores si elementos no existen en la página
+- Mejorar portabilidad del código a través de rutas relativas
+- Facilitar debugging y mantenimiento futuro del código

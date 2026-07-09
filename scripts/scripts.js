@@ -1,0 +1,279 @@
+// =====================================================
+// Scripts para SRI - Servicios de Red e Internet
+// =====================================================
+
+// =====================================================
+// PÁGINA INDEX.HTML - Menú Principal
+// =====================================================
+
+let selectedLanguage = null;
+
+function selectLanguage(lang) {
+    selectedLanguage = lang;
+    const stepLanguage = document.getElementById('step-language');
+    const stepContent = document.getElementById('step-content');
+    const contentTitle = document.getElementById('content-title');
+
+    if (stepLanguage && stepContent && contentTitle) {
+        stepLanguage.style.display = 'none';
+        stepContent.style.display = 'block';
+
+        if (lang === 'va') {
+            contentTitle.textContent = 'Selecciona què vols veure';
+        } else {
+            contentTitle.textContent = 'Selecciona qué deseas ver';
+        }
+    }
+}
+
+function backToLanguage() {
+    selectedLanguage = null;
+    const stepLanguage = document.getElementById('step-language');
+    const stepContent = document.getElementById('step-content');
+    
+    if (stepLanguage && stepContent) {
+        stepLanguage.style.display = 'block';
+        stepContent.style.display = 'none';
+    }
+}
+
+function goTo(section) {
+    if (!selectedLanguage) {
+        selectLanguage('es');
+        return;
+    }
+
+    if (section === 'programacion') {
+        window.location.href = 'programacion.html?lang=' + selectedLanguage;
+    } else if (section === 'guia') {
+        window.location.href = 'guia.html?lang=' + selectedLanguage;
+    }
+}
+
+// =====================================================
+// PÁGINA PROGRAMACION.HTML - Gestión de Idiomas
+// =====================================================
+
+// Contenido en Castellano
+const contenidoCastellano = {
+    titulo: "Programación SRI",
+    curso: "2026-2027",
+    ciclo: "Administración de Sistemas Informáticos en Red",
+    modulo: "Servicios de Red e Internet",
+    profesor: "Paco Aldarias",
+    secciones: {
+        introduccion: {
+            titulo: "Introducción",
+            contenido: "Este módulo introduce al alumnado en la configuración, gestión y mantenimiento de servicios de red e internet, desarrollando competencias técnicas y de resolución de problemas."
+        },
+        competencias: {
+            titulo: "Competencias",
+            items: [
+                "Configurar servicios de red básicos y avanzados.",
+                "Gestionar accesos, seguridad y recursos compartidos.",
+                "Resolver incidencias relacionadas con conectividad y servicios de internet."
+            ]
+        },
+        resultados: {
+            titulo: "Resultados de aprendizaje",
+            items: [
+                "Identificar servicios de red y su funcionamiento.",
+                "Instalar y configurar servicios como DHCP, DNS y web.",
+                "Aplicar medidas de seguridad en redes y equipos.",
+                "Realizar pruebas y monitorizar servicios."
+            ]
+        },
+        criterios: {
+            titulo: "Criterios de evaluación",
+            items: [
+                "Configura correctamente servicios de red.",
+                "Prueba y comprueba el funcionamiento de los servicios.",
+                "Aplica buenas prácticas de seguridad.",
+                "Documenta adecuadamente las tareas realizadas."
+            ]
+        },
+        contenidos: {
+            titulo: "Contenidos",
+            items: [
+                "Fundamentos de redes y protocolos.",
+                "Servicios de red: DHCP, DNS, web y FTP.",
+                "Seguridad en servicios de red.",
+                "Resolución de incidencias y monitorización."
+            ]
+        },
+        unidades: {
+            titulo: "Unidades didácticas",
+            items: [
+                "Introducción a los servicios de red.",
+                "Configuración de DNS y DHCP.",
+                "Servicios web y transferencia de archivos.",
+                "Seguridad y mantenimiento.",
+                "Resolución de problemas y documentación."
+            ]
+        },
+        metodologia: {
+            titulo: "Metodología",
+            contenido: "Se combinarán explicaciones teóricas, prácticas de laboratorio y trabajos guiados para favorecer el aprendizaje activo."
+        },
+        actividades: {
+            titulo: "Actividades complementarias",
+            items: [
+                "Talleres de configuración de servicios.",
+                "Charlas sobre seguridad y redes.",
+                "Visitas a centros o empresas del sector.",
+                "Proyectos prácticos con servicios virtualizados."
+            ]
+        }
+    }
+};
+
+// Contenido en Valenciano
+const contenidoValenciano = {
+    titulo: "Programació SRI",
+    curso: "2026-2027",
+    ciclo: "Administració de Sistemes Informàtics en Xarxa",
+    modulo: "Serveis de Xarxa i Internet",
+    profesor: "Paco Aldarias",
+    secciones: {
+        introduccion: {
+            titulo: "Introducció",
+            contenido: "Aquest mòdul introdueix l'alumnat en la configuració, gestió i manteniment de serveis de xarxa i internet, desenvolupant competències tècniques i de resolució de problemes."
+        },
+        competencias: {
+            titulo: "Competències",
+            items: [
+                "Configurar serveis de xarxa bàsics i avançats.",
+                "Gestionar accessos, seguretat i recursos compartits.",
+                "Resoldre incidències relacionades amb la connectivitat i serveis d'internet."
+            ]
+        },
+        resultados: {
+            titulo: "Resultats d'aprenentatge",
+            items: [
+                "Identificar serveis de xarxa i el seu funcionament.",
+                "Instal·lar i configurar serveis com DHCP, DNS i web.",
+                "Aplicar mesures de seguretat en xarxes i equips.",
+                "Realitzar proves i monitoritzar serveis."
+            ]
+        },
+        criterios: {
+            titulo: "Criteris d'avaluació",
+            items: [
+                "Configura correctament serveis de xarxa.",
+                "Prova i comprova el funcionament dels serveis.",
+                "Aplica bones pràctiques de seguretat.",
+                "Documenta adequadament les tasques realitzades."
+            ]
+        },
+        contenidos: {
+            titulo: "Continguts",
+            items: [
+                "Fonaments de xarxes i protocols.",
+                "Serveis de xarxa: DHCP, DNS, web i FTP.",
+                "Seguretat en serveis de xarxa.",
+                "Resolució d'incidències i monitorització."
+            ]
+        },
+        unidades: {
+            titulo: "Unitats didàctiques",
+            items: [
+                "Introducció als serveis de xarxa.",
+                "Configuració de DNS i DHCP.",
+                "Serveis web i transferència d'arxius.",
+                "Seguretat i manteniment.",
+                "Resolució de problemes i documentació."
+            ]
+        },
+        metodologia: {
+            titulo: "Metodologia",
+            contenido: "Es combinaran explicacions teòriques, pràctiques de laboratori i treballs guiats per afavorir l'aprenentatge actiu."
+        },
+        actividades: {
+            titulo: "Activitats complementàries",
+            items: [
+                "Tallers de configuració de serveis.",
+                "Xerrades sobre seguretat i xarxes.",
+                "Visites a centres o empreses del sector.",
+                "Projectes pràctics amb serveis virtualitzats."
+            ]
+        }
+    }
+};
+
+function getLanguage() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('lang') || 'es';
+}
+
+function renderContent(lang) {
+    const contenido = lang === 'va' ? contenidoValenciano : contenidoCastellano;
+    const content = document.getElementById('content');
+
+    if (!content) return;
+
+    let html = `
+        <h1>${contenido.titulo}</h1>
+        <p><strong>Curso:</strong> ${contenido.curso}</p>
+        <p><strong>Ciclo Formativo:</strong> ${contenido.ciclo}</p>
+        <p><strong>Módulo Profesional:</strong> ${contenido.modulo}</p>
+        <p><strong>Módulo Profesor:</strong> ${contenido.profesor}</p>
+    `;
+
+    for (const [key, seccion] of Object.entries(contenido.secciones)) {
+        html += `<section><h2>${seccion.titulo}</h2>`;
+        if (seccion.contenido) {
+            html += `<p>${seccion.contenido}</p>`;
+        }
+        if (seccion.items) {
+            const isOrdered = key === 'unidades';
+            html += `<${isOrdered ? 'ol' : 'ul'}>`;
+            seccion.items.forEach(item => {
+                html += `<li>${item}</li>`;
+            });
+            html += `</${isOrdered ? 'ol' : 'ul'}>`;
+        }
+        html += `</section>`;
+    }
+
+    content.innerHTML = html;
+
+    // Actualizar botones activos
+    const langEs = document.getElementById('lang-es');
+    const langVa = document.getElementById('lang-va');
+    
+    if (langEs) langEs.className = lang === 'es' ? 'active' : '';
+    if (langVa) langVa.className = lang === 'va' ? 'active' : '';
+    
+    // Actualizar idioma del HTML
+    document.documentElement.lang = lang === 'va' ? 'va' : 'es';
+}
+
+// Inicializar al cargar la página programacion.html
+document.addEventListener('DOMContentLoaded', function() {
+    const content = document.getElementById('content');
+    
+    if (content) {
+        const currentLang = getLanguage();
+        renderContent(currentLang);
+
+        // Cambiar idioma cuando se hace clic en los botones
+        const langEs = document.getElementById('lang-es');
+        const langVa = document.getElementById('lang-va');
+
+        if (langEs) {
+            langEs.addEventListener('click', function(e) {
+                e.preventDefault();
+                renderContent('es');
+                window.history.replaceState({}, '', '?lang=es');
+            });
+        }
+
+        if (langVa) {
+            langVa.addEventListener('click', function(e) {
+                e.preventDefault();
+                renderContent('va');
+                window.history.replaceState({}, '', '?lang=va');
+            });
+        }
+    }
+});

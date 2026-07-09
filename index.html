@@ -12,7 +12,7 @@
 
 <body class="language-page">
     <div class="language-selector">
-        <img src="imagenes/ciclos-informatica.svg" alt="Ciclos Formativos de Informática" class="ciclos-image">
+        <img src="imagenes/familia.png" alt="Ciclos Formativos de Informática" class="ciclos-image">
         <h1>SRI</h1>
         <p class="main-subtitle">Servicios de Red e Internet</p>
 
@@ -42,44 +42,7 @@
         </footer>
     </div>
 
-    <script>
-        let selectedLanguage = null;
-
-        function selectLanguage(lang) {
-            selectedLanguage = lang;
-            const stepLanguage = document.getElementById('step-language');
-            const stepContent = document.getElementById('step-content');
-            const contentTitle = document.getElementById('content-title');
-
-            stepLanguage.style.display = 'none';
-            stepContent.style.display = 'block';
-
-            if (lang === 'va') {
-                contentTitle.textContent = 'Selecciona què vols veure';
-            } else {
-                contentTitle.textContent = 'Selecciona qué deseas ver';
-            }
-        }
-
-        function backToLanguage() {
-            selectedLanguage = null;
-            document.getElementById('step-language').style.display = 'block';
-            document.getElementById('step-content').style.display = 'none';
-        }
-
-        function goTo(section) {
-            if (!selectedLanguage) {
-                selectLanguage('es');
-                return;
-            }
-
-            if (section === 'programacion') {
-                window.location.href = 'programacion.html?lang=' + selectedLanguage;
-            } else if (section === 'guia') {
-                window.location.href = 'guia.html?lang=' + selectedLanguage;
-            }
-        }
-    </script>
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
