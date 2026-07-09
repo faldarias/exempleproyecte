@@ -36,6 +36,9 @@ Estructuramos contenido: Separamos el contenido del aspecto creando estilo.css. 
 
 - Sesión 4: Cierra y comparte la versión final. Corregir erratas. Revisar errores. Preparar un manual de uso. IA utilizada: OpenCode.
   
+
+   [Prompt4](./prompts/prompt4.txt)
+
    [Manual de uso](manual.html)
 
-    
+      ![Imágen sesion 4](img/captura4.jpg)
