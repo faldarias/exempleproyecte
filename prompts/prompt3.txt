@@ -1,1 +1,7 @@
-Crea en la web del fichero index un menu que permita escoger entre programacion o guia del alumno, test. Tambien debe de poderse eleguir el idioma catellan o y valencia. Crea un fichero guia.html con un resumen de lo mas importante de la programacion. El text debe ser 5 preguntas sobre la guia del alumno. Añade este texto a la carpeta prompt fcihero propmp3.
+Crea en la web del fichero index un menu que permita escoger entre 
+programacion o guia del alumno, test. 
+Tambien debe de poderse eleguir el idioma catellan o y valencia. 
+Crea un fichero guia.html con un resumen de lo mas importante de 
+la programacion. 
+El text debe ser 5 preguntas sobre la guia del alumno. 
+Añade este texto a la carpeta prompt fihero propmp3.
