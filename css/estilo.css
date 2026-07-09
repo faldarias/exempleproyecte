@@ -220,6 +220,16 @@ body.language-page {
     transform: scale(1.05);
 }
 
+.btn-manual {
+    background-color: #8b5cf6;
+    color: white;
+}
+
+.btn-manual:hover {
+    background-color: #7c3aed;
+    transform: scale(1.05);
+}
+
 .step-back {
     margin-top: 20px;
     text-align: center;

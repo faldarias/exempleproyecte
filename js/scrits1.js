@@ -13,6 +13,8 @@ function goTo(section) {
         window.location.href = 'guia.html?lang=es';
     } else if (section === 'test') {
         window.location.href = 'test.html?lang=es';
+    } else if (section === 'manual') {
+        window.location.href = 'manual.html?lang=es';
     }
 }
 

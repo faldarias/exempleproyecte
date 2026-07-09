@@ -1,0 +1,3 @@
+Prepara un manual de uso y llamalo manual.html que explique que esta app permite ver la programación, la guia didáctica y un test sobre de compresión de la guia. Crea un enlace a la página index.html. Añade este texto al fichero prompts/prompt4.txt.
+
+Añade al menu del index.html un elemento nuevo que sea Manual de Uso y enlace con la web manual.html. El manual permitira cambiar de idioma castellano al valenciano. Añade este texto anterior al fichero prompt4.txt

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manual de uso de la aplicación SRI">
+    <meta name="author" content="Paco Aldarias">
+    <title>Manual de uso - SRI</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="language-nav">
+        <a href="index.html" class="back-link">← Atrás</a>
+        <div>
+            <a href="?lang=es" id="lang-es">Castellano</a>
+            <a href="?lang=va" id="lang-va">Valenciano</a>
+        </div>
+    </div>
+
+    <main id="content">
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Conselleria d'Educació. Ciclo Formativo ASIR.</p>
+    </footer>
+
+    <script>
+        const manualES = {
+            titulo: "Manual de uso",
+            secciones: [
+                {
+                    titulo: "¿Qué es esta aplicación?",
+                    contenido: "Esta aplicación web permite a los alumnos del módulo de Servicios de Red e Internet (SRI) del ciclo formativo ASIR acceder a los contenidos didácticos y poner a prueba sus conocimientos."
+                },
+                {
+                    titulo: "Funcionalidades",
+                    items: [
+                        "<strong>Programación:</strong> Consulta la programación del módulo SRI, con los contenidos, competencias, resultados de aprendizaje, criterios de evaluación y metodología.",
+                        "<strong>Guía didáctica:</strong> Accede a una guía resumen con los conceptos clave del módulo, recursos recomendados y consejos de estudio.",
+                        "<strong>Test de comprensión:</strong> Responde 5 preguntas tipo test basadas en la guía didáctica, con 3 opciones cada una. Necesitas 3 aciertos para aprobar. Al finalizar obtendrás la nota y sabrás si has aprobado."
+                    ],
+                    esLista: true
+                },
+                {
+                    titulo: "Idiomas",
+                    contenido: "La aplicación está disponible en castellano y valenciano. Puedes cambiar de idioma en cualquier momento desde la barra de navegación superior."
+                },
+                {
+                    titulo: "Cómo empezar",
+                    contenido: "Desde la página principal puedes seleccionar directamente entre Programación, Guía del Alumno, Test o Manual de Uso."
+                }
+            ]
+        };
+
+        const manualVA = {
+            titulo: "Manual d'ús",
+            secciones: [
+                {
+                    titulo: "Què és aquesta aplicació?",
+                    contenido: "Aquesta aplicació web permet als alumnes del mòdul de Serveis de Xarxa i Internet (SRI) del cicle formatiu ASIR accedir als continguts didàctics i posar a prova els seus coneixements."
+                },
+                {
+                    titulo: "Funcionalitats",
+                    items: [
+                        "<strong>Programació:</strong> Consulta la programació del mòdul SRI, amb els continguts, competències, resultats d'aprenentatge, criteris d'avaluació i metodologia.",
+                        "<strong>Guia didàctica:</strong> Accedeix a una guia resum amb els conceptes clau del mòdul, recursos recomanats i consells d'estudi.",
+                        "<strong>Test de comprensió:</strong> Respon 5 preguntes tipus test basades en la guia didàctica, amb 3 opcions cadascuna. Necessites 3 encerts per aprovar. En finalitzar, obtindràs la nota i sabràs si has aprovat."
+                    ],
+                    esLista: true
+                },
+                {
+                    titulo: "Idiomes",
+                    contenido: "L'aplicació està disponible en castellà i valencià. Pots canviar d'idioma en qualsevol moment des de la barra de navegació superior."
+                },
+                {
+                    titulo: "Com començar",
+                    contenido: "Des de la pàgina principal pots seleccionar directament entre Programació, Guia de l'Alumne, Test o Manual d'Ús."
+                }
+            ]
+        };
+
+        function getLanguage() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('lang') || 'es';
+        }
+
+        function renderManual(lang) {
+            const data = lang === 'va' ? manualVA : manualES;
+            const content = document.getElementById('content');
+            if (!content) return;
+
+            let html = `<h1>${data.titulo}</h1>`;
+            data.secciones.forEach(sec => {
+                html += `<section><h2>${sec.titulo}</h2>`;
+                if (sec.contenido) html += `<p>${sec.contenido}</p>`;
+                if (sec.items) {
+                    html += '<ul>';
+                    sec.items.forEach(item => html += `<li>${item}</li>`);
+                    html += '</ul>';
+                }
+                html += `</section>`;
+            });
+            html += `<p style="text-align:center;margin-top:2rem;">
+                <a href="index.html" class="btn-manual" style="padding:15px 40px;text-decoration:none;color:white;border-radius:5px;font-weight:bold;display:inline-block;">${lang === 'va' ? 'Tornar a la pàgina principal' : 'Volver a la página principal'}</a>
+            </p>`;
+            content.innerHTML = html;
+
+            document.getElementById('lang-es').className = lang === 'es' ? 'active' : '';
+            document.getElementById('lang-va').className = lang === 'va' ? 'active' : '';
+            document.documentElement.lang = lang === 'va' ? 'va' : 'es';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLang = getLanguage();
+            renderManual(currentLang);
+
+            document.getElementById('lang-es').addEventListener('click', function(e) {
+                e.preventDefault();
+                renderManual('es');
+                window.history.replaceState({}, '', '?lang=es');
+            });
+
+            document.getElementById('lang-va').addEventListener('click', function(e) {
+                e.preventDefault();
+                renderManual('va');
+                window.history.replaceState({}, '', '?lang=va');
+            });
+        });
+    </script>
+</body>
+
+</html>

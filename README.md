@@ -34,5 +34,8 @@ Estructuramos contenido: Separamos el contenido del aspecto creando estilo.css. 
 
     ![Imágen sesion 3](img/captura3.jpg)
 
+- Sesión 4: Cierra y comparte la versión final. Corregir erratas. Revisar errores. Preparar un manual de uso. IA utilizada: OpenCode.
+  
+   [Manual de uso](manual.html)
 
     
