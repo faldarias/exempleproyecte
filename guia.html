@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía del Alumno - SRI Servicios de Red e Internet">
+    <meta name="author" content="Paco Aldarias">
+    <title>Guía del Alumno - SRI</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="language-nav">
+        <a href="index.html" class="back-link">← Atrás</a>
+        <div>
+            <a href="?lang=es" id="lang-es">Castellano</a>
+            <a href="?lang=va" id="lang-va">Valenciano</a>
+        </div>
+    </div>
+
+    <main id="content">
+        <!-- El contenido se cargará aquí -->
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Conselleria d'Educació. Ciclo Formativo ASIR.</p>
+    </footer>
+
+    <script>
+        // Contenido de la Guía en Castellano
+        const guiaCastellano = {
+            titulo: "Guía del Alumno - SRI",
+            descripcion: "Guía rápida y completa para comprender los conceptos clave de Servicios de Red e Internet",
+            secciones: {
+                que_es_sri: {
+                    titulo: "¿Qué es SRI?",
+                    contenido: "SRI (Servicios de Red e Internet) es un módulo del ciclo formativo ASIR que enseña la configuración, gestión y mantenimiento de servicios de red fundamentales para las empresas modernas. Este módulo cubre desde protocolos básicos hasta soluciones avanzadas de seguridad y comunicación."
+                },
+                servicios_principales: {
+                    titulo: "Servicios Principales",
+                    items: [
+                        "DHCP: Protocolo de asignación dinámica de direcciones IP",
+                        "DNS: Sistema de nombres de dominio para resolución de direcciones",
+                        "FTP: Transferencia segura de archivos",
+                        "HTTP/HTTPS: Servicios web seguros",
+                        "SSH: Acceso remoto seguro a servidores",
+                        "Correo Electrónico: SMTP, POP3, IMAP"
+                    ]
+                },
+                objetivos_learning: {
+                    titulo: "Objetivos de Aprendizaje",
+                    items: [
+                        "Comprender el funcionamiento de los protocolos de red",
+                        "Configurar y administrar servicios de red",
+                        "Implementar medidas de seguridad en servicios",
+                        "Resolver problemas y diagnosticar errores",
+                        "Documentar adecuadamente las configuraciones",
+                        "Monitorizar y optimizar servicios en producción"
+                    ]
+                },
+                recursos_recomendados: {
+                    titulo: "Recursos Recomendados",
+                    items: [
+                        "RFC de protocolos (RFC 2131 para DHCP, RFC 1035 para DNS)",
+                        "Documentación oficial de servidores (Apache, Nginx, Bind)",
+                        "Herramientas de análisis: Wireshark, tcpdump, nslookup",
+                        "Laboratorios virtuales: VirtualBox, Hyper-V",
+                        "Comunidades online: Stack Overflow, Server Fault"
+                    ]
+                },
+                consejos_estudio: {
+                    titulo: "Consejos para el Estudio",
+                    items: [
+                        "Practica en laboratorios virtuales frecuentemente",
+                        "Realiza configuraciones reales en un entorno seguro",
+                        "Estudia los comandos y herramientas de diagnóstico",
+                        "Mantén un registro de tus configuraciones",
+                        "Participa en debates y foros técnicos",
+                        "Prepárate para certificaciones profesionales"
+                    ]
+                }
+            }
+        };
+
+        // Contenido de la Guía en Valenciano
+        const guiaValenciano = {
+            titulo: "Guia de l'Alumne - SRI",
+            descripcion: "Guia ràpida i completa per a comprendre els conceptes clau de Serveis de Xarxa i Internet",
+            secciones: {
+                que_es_sri: {
+                    titulo: "Què és SRI?",
+                    contenido: "SRI (Serveis de Xarxa i Internet) és un mòdul del cicle formatiu ASIR que ensenya la configuració, gestió i manteniment de serveis de xarxa fonamentals per a les empreses modernes. Aquest mòdul cobreix des de protocols bàsics fins a solucions avançades de seguretat i comunicació."
+                },
+                servicios_principales: {
+                    titulo: "Serveis Principals",
+                    items: [
+                        "DHCP: Protocol d'assignació dinàmica d'adreces IP",
+                        "DNS: Sistema de noms de domini per a resolució d'adreces",
+                        "FTP: Transferència segura d'arxius",
+                        "HTTP/HTTPS: Serveis web segurs",
+                        "SSH: Accés remot segur a servidors",
+                        "Correu Electrònic: SMTP, POP3, IMAP"
+                    ]
+                },
+                objetivos_learning: {
+                    titulo: "Objectius d'Aprenentatge",
+                    items: [
+                        "Comprendre el funcionament dels protocols de xarxa",
+                        "Configurar i administrar serveis de xarxa",
+                        "Implementar mesures de seguretat en serveis",
+                        "Resoldre problemes i diagnosticar errors",
+                        "Documentar adequadament les configuracions",
+                        "Monitoritzar i optimitzar serveis en producció"
+                    ]
+                },
+                recursos_recomendados: {
+                    titulo: "Recursos Recomanats",
+                    items: [
+                        "RFC de protocols (RFC 2131 per a DHCP, RFC 1035 per a DNS)",
+                        "Documentació oficial de servidors (Apache, Nginx, Bind)",
+                        "Eines d'anàlisi: Wireshark, tcpdump, nslookup",
+                        "Laboratoris virtuals: VirtualBox, Hyper-V",
+                        "Comunitats en línia: Stack Overflow, Server Fault"
+                    ]
+                },
+                consejos_estudio: {
+                    titulo: "Consells per a l'Estudi",
+                    items: [
+                        "Practica en laboratoris virtuals freqüentment",
+                        "Realitza configuracions reals en un entorn segur",
+                        "Estudia els comandaments i eines de diagnòstic",
+                        "Manté un registre de les teues configuracions",
+                        "Participa en debats i fòrums tècnics",
+                        "Prepara't per a certificacions professionals"
+                    ]
+                }
+            }
+        };
+
+        function getLanguage() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('lang') || 'es';
+        }
+
+        function renderGuia(lang) {
+            const guia = lang === 'va' ? guiaValenciano : guiaCastellano;
+            const content = document.getElementById('content');
+
+            if (!content) return;
+
+            let html = `
+                <h1>${guia.titulo}</h1>
+                <p class="guia-descripcion">${guia.descripcion}</p>
+            `;
+
+            for (const [key, seccion] of Object.entries(guia.secciones)) {
+                html += `<section><h2>${seccion.titulo}</h2>`;
+                if (seccion.contenido) {
+                    html += `<p>${seccion.contenido}</p>`;
+                }
+                if (seccion.items) {
+                    html += `<ul>`;
+                    seccion.items.forEach(item => {
+                        html += `<li>${item}</li>`;
+                    });
+                    html += `</ul>`;
+                }
+                html += `</section>`;
+            }
+
+            content.innerHTML = html;
+
+            // Actualizar botones activos
+            const langEs = document.getElementById('lang-es');
+            const langVa = document.getElementById('lang-va');
+            
+            if (langEs) langEs.className = lang === 'es' ? 'active' : '';
+            if (langVa) langVa.className = lang === 'va' ? 'active' : '';
+            
+            // Actualizar idioma del HTML
+            document.documentElement.lang = lang === 'va' ? 'va' : 'es';
+        }
+
+        // Inicializar al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLang = getLanguage();
+            renderGuia(currentLang);
+
+            // Cambiar idioma cuando se hace clic en los botones
+            const langEs = document.getElementById('lang-es');
+            const langVa = document.getElementById('lang-va');
+
+            if (langEs) {
+                langEs.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    renderGuia('es');
+                    window.history.replaceState({}, '', '?lang=es');
+                });
+            }
+
+            if (langVa) {
+                langVa.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    renderGuia('va');
+                    window.history.replaceState({}, '', '?lang=va');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

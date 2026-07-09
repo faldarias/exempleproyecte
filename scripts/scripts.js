@@ -47,6 +47,8 @@ function goTo(section) {
         window.location.href = 'programacion.html?lang=' + selectedLanguage;
     } else if (section === 'guia') {
         window.location.href = 'guia.html?lang=' + selectedLanguage;
+    } else if (section === 'test') {
+        window.location.href = 'test.html?lang=' + selectedLanguage;
     }
 }
 
