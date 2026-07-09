@@ -41,4 +41,4 @@ Estructuramos contenido: Separamos el contenido del aspecto creando estilo.css. 
 
    [Manual de uso](manual.html)
 
-      ![Imágen sesion 4](./img/captura4.jpg)
+    ![Imágen sesion 4](./img/captura4.jpg)
