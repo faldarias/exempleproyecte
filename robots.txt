@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ejemplo.com/sitemap.xml
+
+# Denegar acceso a directorios sensibles
+Disallow: /imagenes/
+Disallow: /prompts/
+Disallow: /.git/
+
+# Retraso entre requests para bots
+Crawl-delay: 1

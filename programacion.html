@@ -4,16 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programación SRI - Módulo de Servicios de Red e Internet">
+    <meta name="author" content="Paco Aldarias">
     <title>Programación SRI</title>
     <link rel="stylesheet" href="estilo.css">
     <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f3e8ff;
+        }
+
         .language-nav {
-            background-color: #f8f9fa;
+            background-color: #e8d5f7;
             padding: 15px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 2px solid #d4c9f0;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .language-nav a {
@@ -22,30 +33,77 @@
             text-decoration: none;
             border-radius: 5px;
             transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
         }
 
         .language-nav a.active {
-            background-color: #007bff;
+            background-color: #7c3aed;
             color: white;
             font-weight: bold;
         }
 
         .language-nav a:not(.active) {
-            background-color: #e9ecef;
+            background-color: #ddd5e7;
             color: #333;
         }
 
         .language-nav a:not(.active):hover {
-            background-color: #dee2e6;
+            background-color: #cfc0de;
         }
 
         .language-nav .back-link {
-            background-color: #6c757d;
+            background-color: #9333ea;
             color: white;
         }
 
         .language-nav .back-link:hover {
-            background-color: #5a6268;
+            background-color: #7e22ce;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            color: #6b46c1;
+            border-bottom-color: #7c3aed;
+        }
+
+        h2 {
+            color: #7c3aed;
+            border-left-color: #9333ea;
+        }
+
+        section {
+            background-color: white;
+            border-left: 4px solid #d4c9f0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .language-nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .language-nav div {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                gap: 10px;
+            }
         }
     </style>
 </head>
@@ -59,9 +117,13 @@
         </div>
     </div>
 
-    <div id="content">
+    <main id="content">
         <!-- El contenido se cargará aquí -->
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Conselleria d'Educació. Ciclo Formativo ASIR.</p>
+    </footer>
 
     <script>
         const contenidoCastellano = {
