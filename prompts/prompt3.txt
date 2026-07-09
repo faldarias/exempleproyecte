@@ -18,3 +18,5 @@
 
 5. Moure estilo.css a css/ i
    actualitzar rutes en HTML.
+
+   Añade al fichero index.html el autor Francisco Aldarias Raya y la fecha de hoy. 
