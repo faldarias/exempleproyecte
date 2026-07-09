@@ -32,7 +32,7 @@ Estructuramos contenido: Separamos el contenido del aspecto creando estilo.css. 
 
     [Prompt3](./prompts/prompt3.txt)
 
-    ![Imágen sesion 3](img/captura3.jpg)
+    ![Imágen sesion 3](./img/captura3.jpg)
 
 - Sesión 4: Cierra y comparte la versión final. Corregir erratas. Revisar errores. Preparar un manual de uso. IA utilizada: OpenCode.
   
@@ -41,4 +41,4 @@ Estructuramos contenido: Separamos el contenido del aspecto creando estilo.css. 
 
    [Manual de uso](manual.html)
 
-      ![Imágen sesion 4](img/captura4.jpg)
+      ![Imágen sesion 4](./img/captura4.jpg)
