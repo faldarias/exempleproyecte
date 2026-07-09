@@ -1,0 +1,22 @@
+Tarea 2:
+- Desarrollo de funcionalidades avanzadas.
+- Integración de estilos CSS.
+- Nivel avanzado: optimización de código.
+
+Este texto corresponde a lo solicitado en el chat para obtener la tarea 2.
+
+Tarea 3:
+- Crear un selector de idioma en index.html con opciones: Castellano y Valenciano.
+- Crear fichero programacion.html que muestre el contenido en el idioma seleccionado.
+- Implementar cambio dinámico de idioma mediante parámetros URL.
+- Contenidos disponibles:
+  * Introducción
+  * Competencias
+  * Resultados de aprendizaje
+  * Criterios de evaluación
+  * Contenidos
+  * Unidades didácticas
+  * Metodología
+  * Actividades complementarias
+- Ambos idiomas (castellano y valenciano) completamente traducidos y funcionales.
+- Nivel avanzado: uso de JavaScript para gestionar dinámicamente el cambio de idioma.

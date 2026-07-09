@@ -4,88 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programacion SRI</title>
+    <title>Programación SRI - Seleccionar idioma</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .language-selector {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .language-selector h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .language-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .language-buttons a {
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-castellano {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .btn-castellano:hover {
+            background-color: #c82333;
+            transform: scale(1.05);
+        }
+
+        .btn-valenciano {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-valenciano:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Programación SRI</h1>
-    <p><strong>Curso:</strong> 2016-2027</p>
-    <p><strong>Ciclo Formativo:</strong> Administración de Sistemas Informáticos en Red</p>
-    <p><strong>Módulo Profesional:</strong> Servicios de Red e Internet</p>
-    <p><strong>Módulo Profersor:</strong> Paco Aldarias</p>
-
-    <section>
-        <h2>Introducción</h2>
-        <p>Este módulo introduce al alumnado en la configuración, gestión y mantenimiento de servicios de red e
-            internet, desarrollando competencias técnicas y de resolución de problemas.</p>
-    </section>
-
-    <section>
-        <h2>Competencias</h2>
-        <ul>
-            <li>Configurar servicios de red básicos y avanzados.</li>
-            <li>Gestionar accesos, seguridad y recursos compartidos.</li>
-            <li>Resolver incidencias relacionadas con conectividad y servicios de internet.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Resultados de aprendizaje</h2>
-        <ul>
-            <li>Identificar servicios de red y su funcionamiento.</li>
-            <li>Instalar y configurar servicios como DHCP, DNS y web.</li>
-            <li>Aplicar medidas de seguridad en redes y equipos.</li>
-            <li>Realizar pruebas y monitorizar servicios.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Criterios de evaluación</h2>
-        <ul>
-            <li>Configura correctamente servicios de red.</li>
-            <li>Prueba y comprueba el funcionamiento de los servicios.</li>
-            <li>Aplica buenas prácticas de seguridad.</li>
-            <li>Documenta adecuadamente las tareas realizadas.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contenidos</h2>
-        <ul>
-            <li>Fundamentos de redes y protocolos.</li>
-            <li>Servicios de red: DHCP, DNS, web y FTP.</li>
-            <li>Seguridad en servicios de red.</li>
-            <li>Resolución de incidencias y monitorización.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Unidades didácticas</h2>
-        <ol>
-            <li>Introducción a los servicios de red.</li>
-            <li>Configuración de DNS y DHCP.</li>
-            <li>Servicios web y transferencia de archivos.</li>
-            <li>Seguridad y mantenimiento.</li>
-            <li>Resolución de problemas y documentación.</li>
-        </ol>
-    </section>
-
-    <section>
-        <h2>Metodología</h2>
-        <p>Se combinarán explicaciones teóricas, prácticas de laboratorio y trabajos guiados para favorecer el
-            aprendizaje activo.</p>
-    </section>
-
-    <section>
-        <h2>Actividades complementarias</h2>
-        <ul>
-            <li>Talleres de configuración de servicios.</li>
-            <li>Charlas sobre seguridad y redes.</li>
-            <li>Visitas a centros o empresas del sector.</li>
-            <li>Proyectos prácticos con servicios virtualizados.</li>
-        </ul>
-    </section>
+    <div class="language-selector">
+        <h1>Programación SRI</h1>
+        <p style="font-size: 18px; color: #666; margin-bottom: 30px;">Selecciona tu idioma / Selecciona el teu idioma</p>
+        <div class="language-buttons">
+            <a href="programacion.html?lang=es" class="language-buttons btn-castellano">Castellano</a>
+            <a href="programacion.html?lang=va" class="language-buttons btn-valenciano">Valenciano</a>
+        </div>
+    </div>
 </body>
 
 </html>

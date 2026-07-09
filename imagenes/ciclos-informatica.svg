@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <!-- Fondo -->
+  <rect width="800" height="400" fill="#f0e6ff"/>
+  
+  <!-- Título -->
+  <text x="400" y="40" font-size="32" font-weight="bold" text-anchor="middle" fill="#6b46c1">
+    Ciclos Formativos - Familia de Informática
+  </text>
+  
+  <!-- Ciclo 1: Administración de Sistemas Informáticos en Red (ASIR) -->
+  <rect x="50" y="100" width="200" height="120" fill="#e8d5f7" stroke="#6b46c1" stroke-width="2" rx="8"/>
+  <text x="150" y="130" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b46c1">
+    ASIR
+  </text>
+  <text x="150" y="155" font-size="12" text-anchor="middle" fill="#333">
+    Administración de
+  </text>
+  <text x="150" y="175" font-size="12" text-anchor="middle" fill="#333">
+    Sistemas Informáticos
+  </text>
+  <text x="150" y="195" font-size="12" text-anchor="middle" fill="#333">
+    en Red
+  </text>
+  
+  <!-- Ciclo 2: Desarrollo de Aplicaciones Informáticas (DAI/DAW) -->
+  <rect x="300" y="100" width="200" height="120" fill="#d4c9f0" stroke="#6b46c1" stroke-width="2" rx="8"/>
+  <text x="400" y="130" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b46c1">
+    DAW
+  </text>
+  <text x="400" y="155" font-size="12" text-anchor="middle" fill="#333">
+    Desarrollo de
+  </text>
+  <text x="400" y="175" font-size="12" text-anchor="middle" fill="#333">
+    Aplicaciones Web
+  </text>
+  <text x="400" y="195" font-size="12" text-anchor="middle" fill="#333">
+    (y Multiplataforma)
+  </text>
+  
+  <!-- Ciclo 3: Técnico en Informática -->
+  <rect x="550" y="100" width="200" height="120" fill="#e8d5f7" stroke="#6b46c1" stroke-width="2" rx="8"/>
+  <text x="650" y="130" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b46c1">
+    SMR
+  </text>
+  <text x="650" y="155" font-size="12" text-anchor="middle" fill="#333">
+    Sistemas
+  </text>
+  <text x="650" y="175" font-size="12" text-anchor="middle" fill="#333">
+    Microinformáticos
+  </text>
+  <text x="650" y="195" font-size="12" text-anchor="middle" fill="#333">
+    en Red
+  </text>
+  
+  <!-- Módulos principales -->
+  <text x="50" y="270" font-size="16" font-weight="bold" fill="#6b46c1">Módulos Principales:</text>
+  
+  <g id="modulo1">
+    <circle cx="100" cy="320" r="8" fill="#6b46c1"/>
+    <text x="120" y="325" font-size="12" fill="#333">Servicios de Red e Internet</text>
+  </g>
+  
+  <g id="modulo2">
+    <circle cx="100" cy="350" r="8" fill="#6b46c1"/>
+    <text x="120" y="355" font-size="12" fill="#333">Programación y Desarrollo</text>
+  </g>
+  
+  <g id="modulo3">
+    <circle cx="450" cy="320" r="8" fill="#6b46c1"/>
+    <text x="470" y="325" font-size="12" fill="#333">Administración de Bases de Datos</text>
+  </g>
+  
+  <g id="modulo4">
+    <circle cx="450" cy="350" r="8" fill="#6b46c1"/>
+    <text x="470" y="355" font-size="12" fill="#333">Seguridad Informática</text>
+  </g>
+</svg>

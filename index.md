@@ -1,6 +1,6 @@
 # Programación SRI
 
-**Curso:** 2016-2027
+**Curso:** 2026-2027
 
 **Ciclo Formativo:** Administración de Sistemas Informáticos en Red
 
