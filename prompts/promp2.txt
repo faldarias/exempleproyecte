@@ -1,11 +1,11 @@
-Tarea 2:
+Tarea 1:
 - Desarrollo de funcionalidades avanzadas.
 - Integración de estilos CSS.
 - Nivel avanzado: optimización de código.
 
 Este texto corresponde a lo solicitado en el chat para obtener la tarea 2.
 
-Tarea 3:
+Tarea 2:
 - Crear un selector de idioma en index.html con opciones: Castellano y Valenciano.
 - Crear fichero programacion.html que muestre el contenido en el idioma seleccionado.
 - Implementar cambio dinámico de idioma mediante parámetros URL.
@@ -20,20 +20,10 @@ Tarea 3:
   * Actividades complementarias
 - Ambos idiomas (castellano y valenciano) completamente traducidos y funcionales.
 - Nivel avanzado: uso de JavaScript para gestionar dinámicamente el cambio de idioma.
-
-Tarea 4: Preparación para Internet
 - Cambiar la tipografía de todas las webs a sans-serif (-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif).
 - Añadir imagen SVG de ciclos de informática al fichero index.html (ciclos-informatica.svg).
 - Cambiar el color de fondo a violeta suave (#f3e8ff).
-- Crear archivo .htaccess para configuración de servidor Apache:
-  * Redirección www a no-www
-  * Redirección HTTP a HTTPS
-  * Compresión de contenido
-  * Caché del navegador
-  * Seguridad: denegar acceso a archivos sensibles
-- Crear archivo robots.txt para optimización SEO.
-- Crear archivo sitemap.xml para indexación en motores de búsqueda.
-- Añadir metaetiquetas en index.html y programacion.html (description, author).
-- Preparar URLs amigables para SEO.
-- Implementar responsive design en todas las páginas.
-- Nivel avanzado: optimización completa para deploying en servidor de internet.
+- Extraer todos los estilos CSS inline de los archivos HTML al fichero estilo.css.
+- Consolidar estilos para todas las páginas en un único archivo CSS.
+- Utilizar rutas relativas para las imágenes y recursos para portabilidad en internet.
+- Eliminar etiquetas <style> de los archivos HTML.
