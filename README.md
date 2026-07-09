@@ -20,4 +20,11 @@ Definición del proyecto. Crear index.html con titulo y elementos básicos. Nive
   - Sesión 2:
 Estructuramos contenido: Separamos el contenido del aspecto creando estilo.css. Definimos estilo de colores. Identificamos secciones sensibles de cambiar para  otros años, como por ejemplo Curso academico, o nombre del profesor.
 
-    ![Sesion 2](/capturas/tarea2.png)
+    ![Sesion 2](/capturas/captura2.jpg)
+
+
+- Sesión 3:
+
+
+
+    ![Sesion 2](/capturas/captura3.jpg)

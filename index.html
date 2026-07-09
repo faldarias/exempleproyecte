@@ -4,26 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Programación SRI - Módulo de Servicios de Red e Internet">
+    <meta name="description" content="SRI - Servicios de Red e Internet - Ciclo Formativo ASIR">
     <meta name="author" content="Paco Aldarias">
-    <title>Programación SRI - Seleccionar idioma</title>
+    <title>SRI - Servicios de Red e Internet</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body class="language-page">
     <div class="language-selector">
         <img src="imagenes/ciclos-informatica.svg" alt="Ciclos Formativos de Informática" class="ciclos-image">
-        <h1>Programación SRI</h1>
-        <p>Servicios de Red e Internet</p>
-        <p class="subtitle">Selecciona tu idioma / Selecciona el teu idioma</p>
-        <div class="language-buttons">
-            <a href="programacion.html?lang=es" class="btn-castellano">Castellano</a>
-            <a href="programacion.html?lang=va" class="btn-valenciano">Valenciano</a>
+        <h1>SRI</h1>
+        <p class="main-subtitle">Servicios de Red e Internet</p>
+
+        <!-- Paso 1: Seleccionar Idioma -->
+        <div id="step-language" class="selection-step">
+            <p class="step-title">Selecciona tu idioma / Selecciona el teu idioma</p>
+            <div class="language-buttons">
+                <a href="javascript:selectLanguage('es')" class="btn-castellano">Castellano</a>
+                <a href="javascript:selectLanguage('va')" class="btn-valenciano">Valenciano</a>
+            </div>
         </div>
+
+        <!-- Paso 2: Seleccionar Contenido -->
+        <div id="step-content" class="selection-step" style="display: none;">
+            <p class="step-title" id="content-title">Selecciona qué deseas ver / Selecciona què vols veure</p>
+            <div class="content-buttons">
+                <a href="javascript:goTo('programacion')" class="btn-programacion">📚 Programación</a>
+                <a href="javascript:goTo('guia')" class="btn-guia">📖 Guía del Alumno</a>
+            </div>
+            <p class="step-back">
+                <a href="javascript:backToLanguage()" class="btn-back">← Atrás</a>
+            </p>
+        </div>
+
         <footer>
             <p>&copy; 2026 Conselleria d'Educació. Ciclo Formativo ASIR.</p>
         </footer>
     </div>
+
+    <script>
+        let selectedLanguage = null;
+
+        function selectLanguage(lang) {
+            selectedLanguage = lang;
+            const stepLanguage = document.getElementById('step-language');
+            const stepContent = document.getElementById('step-content');
+            const contentTitle = document.getElementById('content-title');
+
+            stepLanguage.style.display = 'none';
+            stepContent.style.display = 'block';
+
+            if (lang === 'va') {
+                contentTitle.textContent = 'Selecciona què vols veure';
+            } else {
+                contentTitle.textContent = 'Selecciona qué deseas ver';
+            }
+        }
+
+        function backToLanguage() {
+            selectedLanguage = null;
+            document.getElementById('step-language').style.display = 'block';
+            document.getElementById('step-content').style.display = 'none';
+        }
+
+        function goTo(section) {
+            if (!selectedLanguage) {
+                selectLanguage('es');
+                return;
+            }
+
+            if (section === 'programacion') {
+                window.location.href = 'programacion.html?lang=' + selectedLanguage;
+            } else if (section === 'guia') {
+                window.location.href = 'guia.html?lang=' + selectedLanguage;
+            }
+        }
+    </script>
 </body>
 
 </html>

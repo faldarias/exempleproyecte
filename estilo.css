@@ -129,10 +129,27 @@ body.language-page {
     margin-bottom: 30px;
 }
 
+.language-selector p.main-subtitle {
+    font-size: 1.5rem;
+    color: #6b46c1;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
 .language-selector p.subtitle {
     font-size: 16px;
     color: #999;
     margin-bottom: 30px;
+}
+
+.selection-step {
+    margin: 30px 0;
+}
+
+.step-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .language-buttons {
@@ -149,6 +166,66 @@ body.language-page {
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
+}
+
+.content-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.content-buttons a {
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.btn-programacion {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-programacion:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+.btn-guia {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-guia:hover {
+    background-color: #059669;
+    transform: scale(1.05);
+}
+
+.step-back {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-back {
+    background-color: #6b7280;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #4b5563;
 }
 
 .btn-castellano {

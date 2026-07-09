@@ -1,0 +1,18 @@
+Tarea 3: Menú Principal Interactivo
+
+- Crear un título principal en index.html: "SRI Servicios de Red e Internet"
+- Implementar un sistema de dos pasos en la página principal:
+  * Paso 1: Seleccionar idioma (Castellano o Valenciano)
+  * Paso 2: Elegir entre dos opciones:
+    - Programación (acceso a programacion.html)
+    - Guía del Alumno (acceso a guia.html)
+- Utilizar JavaScript para gestionar la navegación entre pasos
+- Implementar botón "Atrás" para volver al paso anterior
+- Utilizar transiciones suaves entre pasos
+- Mantener la imagen de ciclos de informática en la interfaz principal
+- Botones con iconos y colores diferenciados:
+  * Botones de idioma: Castellano (rojo) y Valenciano (azul)
+  * Botones de contenido: Programación (azul) y Guía del Alumno (verde)
+- Responsive design para dispositivos móviles
+- Nivel avanzado: navegación dinámica basada en idioma seleccionado
+- Preparar para integración con página guia.html que mostrará la guía del alumno
